@@ -1,0 +1,15 @@
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\bin\Debug\App_Data\TechTaskStorage.mdf
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\bin\Debug\App_Data\TechTaskStorage_log.ldf
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\bin\Debug\DBModel.dll.config
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\bin\Debug\DBModel.dll
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\bin\Debug\DBModel.pdb
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\bin\Debug\FluentNHibernate.dll
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\bin\Debug\Iesi.Collections.dll
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\bin\Debug\NHibernate.dll
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\bin\Debug\FluentNHibernate.pdb
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\bin\Debug\FluentNHibernate.xml
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\bin\Debug\Iesi.Collections.xml
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\bin\Debug\NHibernate.xml
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\obj\Debug\DBModel.dll
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\obj\Debug\DBModel.pdb
+C:\Near\Docs\NewTechTask\NewTechTask\NewTechTask\DBModel\obj\Debug\DBModel.csprojResolveAssemblyReference.cache

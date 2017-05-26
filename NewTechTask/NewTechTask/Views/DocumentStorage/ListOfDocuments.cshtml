@@ -1,0 +1,81 @@
+﻿@using NewTechTask.Models
+
+@model IEnumerable<DBModel.Models.Document>
+
+@{
+    ViewBag.Title = "Список документов";
+}
+
+<h4>Список документов</h4>
+<br />
+
+
+@using (Html.BeginForm("ListOfDocuments", "DocumentStorage", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <h5>Выберите выриант поиска</h5>
+    
+    @Html.DropDownList("SearchVariants",null, htmlAttributes: new { @class = "form-control" })
+    <br />
+    <h5>Введите текст для поиска</h5>
+    
+    <input type="text" name="SearchText" />
+    <br />
+    <input type="submit" name="findButton" value="Поиск" class="btn btn-default" />
+    
+}
+<br />
+
+<table class="table">
+    <tr>
+        <td>Сортировать по:</td>
+    </tr>
+    <tr>
+        <td>@Html.ActionLink("Названию", "ListOfDocuments", new { sortOrder = ViewBag.NameSort })</td>
+    </tr>
+    <tr>
+        <td>@Html.ActionLink("Автору", "ListOfDocuments", new { sortOrder = ViewBag.AuthorSort })</td>
+    </tr>
+    <tr>
+        <td>@Html.ActionLink("Дате", "ListOfDocuments", new { sortOrder = ViewBag.DateSort })</td>
+    </tr>
+</table>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DocumentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Author)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DocumentAddDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @if(item.DocumentName.Length > 30)
+            {
+                item.DocumentName = item.DocumentName.Substring(0, 29) + "...";
+            }
+            @Html.DisplayFor(modelItem => item.DocumentName)
+        </td>
+        <td>
+            @Html.DisplayFor(model => item.Author.UserName)
+        </td>
+        <td>
+           @Html.DisplayFor(modelItem => item.DocumentAddDate) 
+        </td>
+        <td>
+            @Html.ActionLink("Скачать", "Download", new { link = item.LinkToUploadedFile, file = item.FileName }, new { @class = "btn btn-primary" })
+        </td>
+        <td>
+        </td>
+    </tr>
+}
+
+</table>
